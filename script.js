@@ -4,10 +4,11 @@
   Per WhatsApp usa il link di invito che desideri rendere pubblico.
 */
 const LINKS = {
-  whatsapp: "INSERISCI_LINK_WHATSAPP",
-  facebook: "INSERISCI_LINK_FACEBOOK",
-  instagram: "INSERISCI_LINK_INSTAGRAM",
-  maps: "INSERISCI_LINK_GOOGLE_MAPS"
+  whatsapp: "https://chat.whatsapp.com/Ifag3B36bjDHfOy5tIghCx?mode=ems_copy_c",
+  facebook: "https://www.facebook.com/share/1FtL1H5fXd/",
+  instagram: "https://www.instagram.com/comunitafilosoficadifirenze?lqvp=NTM0c21oZjVseGZ3",
+  maps: "https://maps.app.goo.gl/iWHHv3rNXd6gTtKn6"
+};
 };
 
 document.querySelectorAll("[data-link]").forEach(a => {
