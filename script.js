@@ -9,7 +9,6 @@ const LINKS = {
   instagram: "https://www.instagram.com/comunitafilosoficadifirenze?lqvp=NTM0c21oZjVseGZ3",
   maps: "https://maps.app.goo.gl/iWHHv3rNXd6gTtKn6"
 };
-};
 
 document.querySelectorAll("[data-link]").forEach(a => {
   const url = LINKS[a.dataset.link];
