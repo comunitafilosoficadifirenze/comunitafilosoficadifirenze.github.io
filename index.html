@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -10,19 +10,22 @@
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Comunità Filosofica di Firenze</h1>
-      <nav>
-        <a href="#comunita">Chi siamo</a>
-        <a href="#organizzazione">Come funziona</a>
-        <a href="#partecipare">Come partecipare</a>
-        <a href="#contatti">Contatti</a>
-      </nav>
-    </div>
+  <header class="header">
+    <a class="site-name" href="#inizio">Comunità Filosofica di Firenze</a>
+    <nav>
+      <a href="#comunita">Chi siamo</a>
+      <a href="#organizzazione">Come funziona</a>
+      <a href="#partecipare">Come partecipare</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
   </header>
 
-  <main class="container">
+  <main id="inizio">
+
+    <section class="intro">
+      <p class="location">Firenze</p>
+      <h1>Comunità Filosofica di Firenze</h1>
+    </section>
 
     <section id="comunita" class="content-section">
       <h2>Chi siamo</h2>
@@ -58,38 +61,47 @@
       <p>La Comunità vuole essere anche un'occasione per uscire da questa routine e conoscere persone con cui condividere il nostro percorso di crescita filosofica.</p>
     </section>
 
-    <section id="contatti" class="content-section">
+    <section id="contatti" class="content-section contact">
       <h2>Contatti</h2>
 
-      <p>Luogo degli incontri: Firenze</p>
+      <p><strong>Luogo degli incontri:</strong> Firenze</p>
 
-      <div class="social-links">
+      <div class="links">
         <a data-link="whatsapp" href="#">Gruppo WhatsApp</a>
         <a data-link="facebook" href="#">Facebook</a>
         <a data-link="instagram" href="#">Instagram</a>
       </div>
 
-      <p>Email: <a href="mailto:comunitafilosoficadifirenze@gmail.com">comunitafilosoficadifirenze@gmail.com</a></p>
+      <p class="email-contact"><strong>Email:</strong> <a href="mailto:comunitafilosoficadifirenze@gmail.com">comunitafilosoficadifirenze@gmail.com</a></p>
 
-      <form action="https://formsubmit.co/comunitafilosoficadifirenze@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nuovo messaggio dal sito della Comunità Filosofica di Firenze">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Il tuo nome" required>
-        <input type="email" name="email" placeholder="La tua email" required>
-        <textarea name="message" placeholder="Scrivi il tuo messaggio" required></textarea>
-        <button type="submit">Invia</button>
-      </form>
+      <div class="contact-form-wrap">
+        <h3>Scrivici</h3>
+        <p>Per informazioni o per saperne di più sulla Comunità, puoi inviarci un messaggio.</p>
+
+        <form class="contact-form" action="https://formsubmit.co/comunitafilosoficadifirenze@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuovo messaggio dal sito della Comunità Filosofica di Firenze">
+          <input type="hidden" name="_captcha" value="false">
+
+          <label for="name">Nome</label>
+          <input id="name" type="text" name="name" placeholder="Il tuo nome" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="La tua email" required>
+
+          <label for="message">Messaggio</label>
+          <textarea id="message" name="message" rows="5" placeholder="Scrivi il tuo messaggio" required></textarea>
+
+          <button type="submit">Invia</button>
+        </form>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <div class="container">
-      <p>Comunità Filosofica di Firenze</p>
-    </div>
+    Comunità Filosofica di Firenze
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-```
